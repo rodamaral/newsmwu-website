@@ -1,13 +1,10 @@
 <script lang="ts">
-  import Back1 from "./assets/images/Gam.png";
   import Logo from "./assets/images/logo.png";
   import DownloadPointer from "./DownloadPointer.svelte";
   import VideoContainer from "./VideoContainer.svelte";
 </script>
 
 <section class="mainSection">
-  <img src={Back1} class="background-image" alt="TODO Logo" />
-
   <div class="container">
     <img src={Logo} class="logo" alt="TODO Logo" />
 
@@ -33,16 +30,6 @@
     width: 100%;
     max-width: 100%;
     border: 8px solid black;
-  }
-
-  .mainSection > .background-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* min-height: 1000px; */
-    aspect-ratio: 16 / 9;
-    width: 100% !important;
-    min-height: 500px;
   }
 
   .logo {
@@ -80,17 +67,21 @@
   }
 
   .mainSection > .container {
-    position: absolute;
+    /* position: absolute; */
     max-width: 100%;
     height: 100%;
     background-color: #ff000060;
     border: 8px solid green;
-    top: 0;
+    /* top: 0; */
     /* top: -600%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+
+    background-image: url("./assets/images/Gam.png");
+    background-position: center;
+    background-repeat: repeat-x;
   }
 </style>
