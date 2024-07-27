@@ -28,17 +28,11 @@
     max-width: 150px; /* TODO */
     background-color: #ffda00;
     overflow: hidden;
-    padding: 0.5em 2em;
+    padding: 4px 2em;
     text-align: center;
     border-radius: 9999em;
     box-sizing: content-box;
     font-size: 19px;
-  }
-
-  .description > span {
-    background-color: #00da0080;
-    font-size: 20px;
-    text-align: center;
   }
 
   .video-box {

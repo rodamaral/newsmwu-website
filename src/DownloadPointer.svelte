@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: end;
     order: 2;
+    gap: 10px;
   }
 
   @media (min-width: 720px) {
@@ -36,13 +37,13 @@
 
   @keyframes bounce-animation {
     0% {
-      transform: translateY(0);
+      transform: translateY(-10px);
     }
     66% {
-      transform: translateY(10px);
+      transform: translateY(0px);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(-10px);
     }
   }
 </style>

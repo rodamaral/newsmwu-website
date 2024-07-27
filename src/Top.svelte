@@ -1,43 +1,41 @@
 <script lang="ts">
   import Logo from "./assets/images/logo.png";
   import DownloadPointer from "./DownloadPointer.svelte";
+  import { TAS_URL, WALKTHROUGH_URL } from "./lib/constants";
   import VideoContainer from "./VideoContainer.svelte";
 </script>
 
-<section class="mainSection">
+<section class="section">
   <div class="container">
     <img src={Logo} class="logo" alt="TODO Logo" />
 
     <div class="container2">
-      <VideoContainer
-        description="Watch the full 100% TAS!"
-        url="https://www.youtube.com/embed/tgbNymZ7vqY"
-      />
+      <VideoContainer description="Watch the full 100% TAS!" url={TAS_URL} />
 
       <DownloadPointer />
 
       <VideoContainer
         description="Watch the complete walkthrough"
-        url="https://www.youtube.com/embed/tgbNymZ7vqY"
+        url={WALKTHROUGH_URL}
       />
     </div>
   </div>
 </section>
 
 <style>
-  .mainSection {
+  .section {
     position: relative;
     width: 100%;
     max-width: 100%;
-    border: 8px solid black;
   }
 
   .logo {
-    border: 1px solid blue;
     min-width: 200px;
     max-width: 400px;
-    width: min-content;
     flex: 1 1 100px;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .container2 {
@@ -47,10 +45,9 @@
     align-items: center;
     justify-items: center;
     flex: 1 1 auto;
-    /* display: grid; */
-    border: 8px solid magenta;
     max-width: 100%;
     overflow: auto;
+    gap: 8px;
   }
 
   @media (min-width: 720px) {
@@ -59,29 +56,16 @@
       align-items: center;
       justify-items: center;
       flex: 1 1 auto;
-      /* display: grid; */
-      border: 8px solid red;
       max-width: 100%;
       overflow: auto;
     }
   }
 
-  .mainSection > .container {
-    /* position: absolute; */
-    max-width: 100%;
-    height: 100%;
-    background-color: #ff000060;
-    border: 8px solid green;
-    /* top: 0; */
-    /* top: -600%; */
-    width: 100%;
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
-    background-image: url("./assets/images/Gam.png");
-    background-position: center;
-    background-repeat: repeat-x;
+    margin: 0 16px;
   }
 </style>

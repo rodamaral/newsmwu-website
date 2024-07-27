@@ -7,3 +7,12 @@
   <Top />
   <Bottom />
 </main>
+
+<style>
+  main {
+    background-image: url("./assets/images/background.png");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
+</style>
