@@ -31,6 +31,18 @@
     max-width: 16ch;
   }
   .logo {
-    background-color: aquamarine;
+    animation: bounce-animation 2s ease infinite;
+  }
+
+  @keyframes bounce-animation {
+    0% {
+      transform: translateY(0);
+    }
+    66% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 </style>
