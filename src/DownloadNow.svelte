@@ -8,7 +8,7 @@
 </script>
 
 <div class="container">
-  <img src={MarioImage} class="mario-image" alt="TODO Logo" />
+  <img src={MarioImage} class="mario-image" alt="Super Mario picture" />
 
   <button on:click={click}>Download now!</button>
 </div>
@@ -36,7 +36,7 @@
     text-align: center;
     border-radius: 9999em;
     box-sizing: content-box;
-    font-size: 19px;
+    font-size: 24px;
     cursor: pointer;
     text-decoration: none;
     box-shadow: 2px 3px black;

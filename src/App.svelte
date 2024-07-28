@@ -11,8 +11,10 @@
 <style>
   main {
     background-image: url("./assets/images/background.png");
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: repeat;
+    background-size: auto;
+    min-height: max(100vh, 1536px);
   }
 </style>

@@ -5,7 +5,7 @@
 <div class="container">
   <span class="description"> Download link below</span>
 
-  <img src={ArrowDown} class="logo" alt="TODO Logo" />
+  <img src={ArrowDown} class="logo" alt="Arrow pointing downward" />
 </div>
 
 <style>
@@ -29,7 +29,8 @@
     text-align: center;
     font-size: 19px;
     font-weight: bold;
-    max-width: 16ch;
+    min-width: 14ch;
+    max-width: 18ch;
   }
   .logo {
     animation: bounce-animation 2s ease infinite;

@@ -69,7 +69,7 @@ h6 {
 
 @font-face {
   font-family: "ZingRust";
-  src: url("./ZingRustDemo-Base.otf") format("opentype");
+  src: url("./assets/ZingRustDemo-Base.otf") format("opentype");
 }
 
 :root {
